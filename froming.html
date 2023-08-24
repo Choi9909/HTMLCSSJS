@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.6 폼 구성하기</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>계정만들기</legend>
+            <span>
+                <input type="text" name="FamilyName" placeholder="성(선택사항)"> <br>
+                <input type="text" name="Name" placeholder="이름"> <br>
+
+                <input type="submit">
+
+            </span>
+
+        </fieldset>
+
+        <fieldset> 
+            <legend>기본정보</legend>
+            <input type="text" name="Year" placeholder="연도">
+            <select name="month" id="month">
+                <option value="1월">1월</option>
+                <option value="2월">2월</option>
+                <option value="3월">3월</option>
+                <option value="4월">4월</option>
+                <option value="5월">5월</option>
+                <option value="6월">6월</option>
+                <option value="7월">7월</option>
+                <option value="8월">8월</option>
+                <option value="9월">9월</option>
+                <option value="10월">10월</option>
+                <option value="11월">11월</option>
+                <option value="12월">12월</option>
+            </select>
+            <input type="text" name="Day" placeholder="일"> <br>
+            <select name="gender" id="gender">
+                <option value="Male">남성</option>
+                <option value="Female">여성</option>
+                <option value="Hidden">공개안함</option>
+            </select>
+            <input type="submit">
+        </fieldset>
+        
+        <fieldset>
+            <legend>안전한 비밀번호 만들기</legend>
+            <input type="password" name="password" placeholder="비밀번호"> <br>
+            <input type="password" name="checkpassword" placeholder="확인"> <br>
+            <input type="checkbox" id="visible" name="visible"> 
+            <label for="visible">비밀번호 표시</label>
+            <input type="submit">
+            
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
