@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.4 가상 클래스 선택자 사용하기</title>
+    <style>
+        a:link{ /*한 번도 방문한 적이 없는 링크*/
+            color: orange;
+        }
+        a:visited{ /*한 번이라도 방문한 적이 있는 링크*/
+            color: green;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: blue;
+        }
+         input:focus{
+            color: gold;
+        }
+        input:checked + label{
+            color: red;
+        }
+        input:disabled,
+        button:disabled{
+            background-color: #ccc;
+        }
+        input:enabled,
+        button:enabled{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" target="_blank">오펜하이머</a>
+
+    <input type="text">
+    <input type="checkbox" name="red"> 
+    <label for="red">빨간색이 될까요?</label>
+
+    <input type="text" disabled>
+    <button disabled>버튼</button>
+
+    <input type="text">
+    <button>버튼</button>
+    
+</body>
+</html>
