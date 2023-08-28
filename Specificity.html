@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.1.2 적용 우선순위와 개별성</title>
+    <style>
+        p{
+            color: red;
+        }
+        p{
+            color: blue;
+        }
+        p{
+            color: orange;
+        }
+        .title{
+            color: blue; /* 0, 0, 1, 0 */
+        }
+        h1{
+            color: red; /* 0, 0, 0, 1 */
+        }
+
+        .main{
+            color: darkblue !important; /* 1, 0, 0, 1, 0 */
+        }
+        #main #sub .main{ /* 0, 2, 1, 0 */
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <p>여러개의 태그에 스타일시트가 적용될 경우</p>
+
+    <h1 class="title"> 개별성 규칙에 따른 점수 계산을 통한 스타일시트 적용</h1>
+
+    <div id="main">
+        <div id="sub">
+            <!-- 1, 0, 0, 0 -->
+            <p class="main" style="color: green;">important</p>
+        </div>
+    </div>
+</body>
+</html>
