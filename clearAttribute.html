@@ -3,29 +3,23 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>6.5.1 위치 속성으로 HTML 요소 배치하기</title>
+        <title>6.5.3 clear 속성</title>
         <style>
-            /* body {
-                margin: 0;
-                height: 4000px;
-            } */
             .box {
                 width: 100px;
                 height: 100px;
             }
             .red-box {
                 background-color: #f00;
-                position: relative;
-                z-index: 10;
+                float: left;
             }
             .green-box {
-                background-color: #080;
-                position: absolute;
-                left: 0px;
-                top: 0px;
+                background-color: #090;
+                float: left;
             }
             .blue-box {
                 background-color: #00f;
+                clear: left;
             }
         </style>
     </head>

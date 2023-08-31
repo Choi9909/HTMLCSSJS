@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container::after{
+                clear: both;
+                display: block;
+                content: "";
+            }
+            .container {
+                width : 400px;
+                padding: 1rem;
+                margin: 0 auto;
+                border: 1px; solid black;
+                background-color: #CCC;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                float: left;
+            }
+            .red-box{
+                background-color: #F00;
+            }
+            .blue-box{
+                background-color: #00F;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box red-box"></div>
+            <div class="box blue-box"></div>
+        </div>
+    </body>
+</html>
