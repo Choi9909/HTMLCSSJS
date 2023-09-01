@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>6.8 변형 효과 적용하기</title>
+        <!-- 전환(transition)와 애니메이션 속성은 요소의 
+        속성을 변하게 하는 데 주 목적이 있는 속성들 입니다 
+    그러나 요소의 크기를 변경하거나 위치를 이동시키거나 회전시키는 것처럼
+    요소 자체를 변하게 하려면 변형(transform) 효과 속성을 사용해야 합니다.-->
+        <style>
+            .container {
+                border: 1px solid #000;
+                display: inline-block;
+                margin: 20px;
+            }
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: #f00;
+            }
+            .box:hover {
+                /* transform: translate(100px, 200px); */
+                transform: rotate(45deg);
+                transform-origin: top left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box"></div>
+        </div>
+    </body>
+</html>
