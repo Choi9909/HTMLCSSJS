@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>6장 셀프체크 3번</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+            body {
+                /* 전체 글꼴 스타일 */
+                font-family: 'Nanum Gothic';
+                font-size: 13px;
+                color: #0645ad;
+            }
+            div {
+                /* 전체 틀 스타일  */
+                width: 346px;
+                height: 265px;
+                border: 1px solid #000;
+                background-color: #f8f9fa;
+                padding: 6px 5px;
+            }
+            p {
+                text-align: center;
+                margin: 0px 0px;
+            }
+            li {
+                margin-bottom: 6px; /* 문항간 거리 띄움 스타일 시트 */
+            }
+            .first {
+                padding-left: 10px;
+                margin-left: 5px;
+            }
+            .second {
+                padding-left: 0px;
+            }
+            ol ol li {
+                margin-left: 30px;
+            }
+            .third {
+                padding-left: 0px;
+                margin-left: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>목차</p>
+            <ol class="first">
+                <li class="1-1"><a href="#">역사</a></li>
+                <ol class="second">
+                    <li><a href="#">개발</a></li>
+                    <li><a href="#">최초 규격</a></li>
+                    <li><a href="#">표준 버전의 역사</a></li>
+                    <ol class="third">
+                        <li><a href="#">HTML 버전 스케줄</a></li>
+                        <li><a href="#">HTML 초안 버전 스케줄</a></li>
+                        <li><a href="#">XTML 버전</a></li>
+                    </ol>
+                </ol>
+
+                <li class="1-2"><a href="#">마크업</a></li>
+                <ol class="second">
+                    <li><a href="#">HTML 요소</a></li>
+                    <li><a href="#">데이터 형식</a></li>
+                    <li><a href="#">문서 형식 선언</a></li>
+                </ol>
+            </ol>
+        </div>
+    </body>
+</html>
