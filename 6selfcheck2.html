@@ -4,61 +4,67 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>6장 셀프체크 2번</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
             div {
                 width: 304px;
                 height: 390px;
-                border: 1px solid #444;
+                border: 1px solid #777;
+                display: flex;
+                justify-content: center; /* 가로 중앙 정렬 */
+                align-items: center; /* 세로 중앙 정렬 */
             }
-
-            .LG {
+            body {
+                font-family: 'Roboto';
+                font-size: 14px;
+                text-align: center; /* 가로 중앙 정렬 */
+            }
+            .GL {
+                font-weight: bold;
+                color: #504444;
+            }
+            button,
+            input {
                 width: 228px;
                 height: 44px;
-                font-family: 'Roboto' sans-serif;
-                font-size: 14px bold;
-                color: #504444;
                 margin-top: 28px;
             }
-            .or {
-                font-family: 'Roboto';
-                font-size: 16px bold;
-                color: #504444;
-                text-align: center;
+            p {
+                font: 16px bold;
             }
             input {
                 background-color: #eaeaea;
-                width: 228px;
-                height: 44px;
             }
-            button {
+            .password {
                 display: block;
-                width: 228px;
-                height: 44px;
-                font-family: 'Roboto';
-                font-size: 14px;
-                color: #ffffff;
-                background-color: #373f3c;
             }
-            .forgot {
-                font-family: 'Roboto';
-                font-size: 14px;
-                color: #2c3432;
+            .BL {
+                background-color: #373f3c;
+                color: #fff;
+            }
+            a {
+                display: block;
+                margin-top: 28px;
             }
         </style>
     </head>
     <body>
         <div>
-            <div class="LG"># Log in with Google</div>
-
-            <p class="or">or</p>
-
-            <input type="text" placeholder="Username" />
-            <input type="password" placeholder="password" />
-            <button>LOGIN</button>
-
-            <p class="forgot">Forgot your password?</p>
+            <form action="#" method="get">
+                <button class="GL"><i class="fa-brands fa-google"></i> Log in with Google</button>
+                <p>or</p>
+                <input type="text" class="id" placeholder="Username" />
+                <input type="password" class="password" placeholder="Password" />
+                <button class="BL">LOGIN</button>
+                <a href="#">Forgot your password?</a>
+            </form>
         </div>
     </body>
 </html>
