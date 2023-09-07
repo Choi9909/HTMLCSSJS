@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>7.1 플렉스 박스 레이아웃으로 1차원 레이아웃 설계하기</title>
+        <link rel="stylesheet" href="flex-basic.css" />
+        <style>
+            .flex-container {
+                display: flex;
+                justify-content: space-evenly;
+                align-content: flex-end;
+                flex-direction: row; /* row-reverse, column, column-reverse */
+                flex-wrap: wrap; /* wrop-reverse */
+                /* 위의 스타일 2개는 flex-flow로 한번에 적용가능
+                예를 들어 flex-flow : row warp */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item">item-1</div>
+            <div class="flex-item">item-2</div>
+            <div class="flex-item">item-3</div>
+            <div class="flex-item">item-4</div>
+            <div class="flex-item">item-5</div>
+            <div class="flex-item">item-6</div>
+            <div class="flex-item">item-7</div>
+            <div class="flex-item">item-8</div>
+            <div class="flex-item">item-9</div>
+            <div class="flex-item">item-10</div>
+            <div class="flex-item">item-11</div>
+            <div class="flex-item">item-12</div>
+            <div class="flex-item">item-13</div>
+            <div class="flex-item">item-14</div>
+            <div class="flex-item">item-15</div>
+        </div>
+    </body>
+</html>
